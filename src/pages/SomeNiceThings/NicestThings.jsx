@@ -2,7 +2,7 @@ import React from 'react';
 import ThingCard from '../../components/ThingCard/ThingCard'
 import { Link } from 'react-router-dom'
 
-const SomeNiceThings = (props) => {
+const NicestThings = (props) => {
   return (
     <>
       <Link to="/">Home</Link>
@@ -14,4 +14,4 @@ const SomeNiceThings = (props) => {
   )
 }
  
-export default SomeNiceThings
+export default NicestThings
