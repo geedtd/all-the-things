@@ -108,6 +108,9 @@ class App extends Component {
         <Route exact path='/the-well-styled-things'>
           <StyledThings things={this.state.davidsThings} />
         </Route>
+        <Route exact path='/the-potato-things'>
+          <PotatoThings things={this.state.christinesThings} />
+        </Route>
       </>
       
     );
