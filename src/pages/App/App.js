@@ -4,7 +4,8 @@ import './App.css';
 import ManliestThings from '../ManliestThings/ManliestThings'
 import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
-import JimmysThings from '../JimmysThings/JimmysThings';
+import JimmysThings from '../JimmysThings/JimmysThings'
+import PotatoThings from '../PotatoThings/PotatoThings'
 
 class App extends Component {
   state = { 
@@ -74,13 +75,26 @@ class App extends Component {
         attributes: ["makes you live a long time", "consistent poops", "probably tacos sometimes!", "farm to market"], 
       },
     ],
+
     jimmysThings : [
       {
         name: 'water bottle',
         image: 'https://i.imgur.com/gRxOxsA.jpg',
         attributes: ['hold water', 'good for you', 'bigger volume']
       }
-    ]
+    ],
+
+    christinesThings: [
+      {
+        name: "borkbork", 
+        attributes: ["floof", "woof", "not a taco", "poof"],
+      },
+      {
+        name: "whalesRgr8",
+        attributes: ["big", "round", "not a taco", "mammal"], 
+      },
+    ],
+
   } 
   render() {
     return (
@@ -92,7 +106,11 @@ class App extends Component {
             <Link to="/the-manliest-things">Ben's Things</Link><br/>
             <Link to="/the-functional-things">Shahzad's Things</Link><br/>
             <Link to="/the-well-styled-things">David's Things</Link><br/>
+
             <Link to='/jimmys-things'>Jimmy's Things</Link><br/>
+
+            <Link to="/the-potato-things">Christine's Things</Link><br/>
+
           </>
         </Route>
         {/* All the <Route> components should live here */}
@@ -105,8 +123,12 @@ class App extends Component {
         <Route exact path='/the-well-styled-things'>
           <StyledThings things={this.state.davidsThings} />
         </Route>
+
         <Route exact path='/jimmys-things'>
           <JimmysThings things={this.state.jimmysThings} />
+        </Route>
+        <Route exact path='/the-potato-things'>
+          <PotatoThings things={this.state.christinesThings} />
         </Route>
       </>
       
