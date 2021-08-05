@@ -5,6 +5,9 @@ import ManliestThings from '../ManliestThings/ManliestThings'
 import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
 import NicestThings from '../SomeNiceThings/NicestThings';
+import JimmysThings from '../JimmysThings/JimmysThings'
+import PotatoThings from '../PotatoThings/PotatoThings'
+
 
 class App extends Component {
   state = { 
@@ -87,6 +90,26 @@ class App extends Component {
       },
       
     ], 
+
+    jimmysThings : [
+      {
+        name: 'water bottle',
+        image: 'https://i.imgur.com/gRxOxsA.jpg',
+        attributes: ['hold water', 'good for you', 'bigger volume']
+      }
+    ],
+
+    christinesThings: [
+      {
+        name: "borkbork", 
+        attributes: ["floof", "woof", "not a taco", "poof"],
+      },
+      {
+        name: "whalesRgr8",
+        attributes: ["big", "round", "not a taco", "mammal"], 
+      },
+    ],
+
   } 
   render() {
     return (
@@ -99,6 +122,11 @@ class App extends Component {
             <Link to="/the-functional-things">Shahzad's Things</Link><br/>
             <Link to="/the-well-styled-things">David's Things</Link><br/>
             <Link to="/the-nicest-things">Gerardo's Things</Link><br/>
+
+            <Link to='/jimmys-things'>Jimmy's Things</Link><br/>
+
+            <Link to="/the-potato-things">Christine's Things</Link><br/>
+
           </>
         </Route>
         {/* All the <Route> components should live here */}
@@ -113,6 +141,12 @@ class App extends Component {
         </Route>
         <Route exact path='/the-nicest-things'>
           <NicestThings things={this.state.gerardosThings} />
+        </Route>
+        <Route exact path='/jimmys-things'>
+          <JimmysThings things={this.state.jimmysThings} />
+        </Route>
+        <Route exact path='/the-potato-things'>
+          <PotatoThings things={this.state.christinesThings} />
         </Route>
       </>
       
