@@ -72,7 +72,17 @@ class App extends Component {
         image: "https://i.imgur.com/gRxOxsA.jpg", 
         attributes: ["makes you live a long time", "consistent poops", "probably tacos sometimes!", "farm to market"], 
       },
-    ] 
+    ],
+    christinesThings: [
+      {
+        name: "borkbork", 
+        attributes: ["floof", "woof", "not a taco", "poof"],
+      },
+      {
+        name: "whalesRgr8",
+        attributes: ["big", "round", "not a taco", "mammal"], 
+      },
+    ],
   } 
   render() {
     return (
