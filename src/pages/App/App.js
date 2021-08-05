@@ -4,6 +4,7 @@ import './App.css';
 import ManliestThings from '../ManliestThings/ManliestThings'
 import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
+import PotatoThings from '../PotatoThings/PotatoThings'
 
 class App extends Component {
   state = { 
@@ -94,6 +95,7 @@ class App extends Component {
             <Link to="/the-manliest-things">Ben's Things</Link><br/>
             <Link to="/the-functional-things">Shahzad's Things</Link><br/>
             <Link to="/the-well-styled-things">David's Things</Link><br/>
+            <Link to="/the-potato-things">Christine's Things</Link><br/>
           </>
         </Route>
         {/* All the <Route> components should live here */}
